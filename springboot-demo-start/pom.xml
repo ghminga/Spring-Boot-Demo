@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.mym.start</groupId><!--个人组织-->
+    <artifactId>springboot-demo-start</artifactId><!--项目名称-->
+    <version>1.0-SNAPSHOT</version><!--版本-->
+
+    <!--初学者专用，他继承于spring-boot-dependencies-->
+    <!--里面包括了定义jdk版本等设计，一般公司或个人项目可能会自定义自己的parent-->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.3.RELEASE</version>
+    </parent>
+
+    <properties>
+        <!--文件拷贝时候的编码-->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding><!--输入-->
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding><!--输出-->
+        <java.version>1.8</java.version><!--jdk版本-->
+    </properties>
+
+    <!--最简单的依赖-->
+    <dependencies>
+
+        <!-- Web 依赖包含Spring SpringMVC -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <!-- 测试依赖 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+    </dependencies>
+
+</project>
